@@ -17,7 +17,7 @@ def get_firstword(user_input):
 def write_to_screen(user_input):
     """ Takes a string of user input. Prints the requested string on the console. """
 
-    r = 6
+    r = 6  # Input string begins with "Write "
     string_to_print = None
     if r > len(user_input):
         print('\nYou have made a syntax error.\n')
@@ -46,7 +46,7 @@ def write_to_screen(user_input):
 def add_two_numbers(user_input):
     """ Adds two values according to a user input string. """
 
-    l = 4
+    l = 4  # Input string starts with "Add "
     r = 5
 
     while r < len(user_input) and user_input[r] != " ":
@@ -81,7 +81,7 @@ def add_two_numbers(user_input):
 def multiply_two_numbers(user_input):
     """ Multiplies two values according to a user input string. """
 
-    l = 9
+    l = 9  # Input string starts with "Multiply "
     r = 10
 
     while r < len(user_input) and user_input[r] != " ":
@@ -116,7 +116,7 @@ def multiply_two_numbers(user_input):
 def divide_two_numbers(user_input):
     """ Divides one value by another according to a user input string. """
 
-    l = 7
+    l = 7  # Input string starts with "Divide "
     r = 8
 
     while r < len(user_input) and user_input[r] != " ":
@@ -151,7 +151,7 @@ def divide_two_numbers(user_input):
 def store_variable(user_input):
     ''' Stores a value in a variable according to a user input string. '''
 
-    l = 6
+    l = 6  # Input string starts with "Store "
     r = 7
 
     if user_input[l] == '"':
